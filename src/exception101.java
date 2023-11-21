@@ -16,6 +16,7 @@ public class exception101 {
             System.out.println("Out of bounds in populating");
         }
     }
+
     public static void printArray(int[] myArray) throws  IndexOutOfBoundsException{
         try{
             for (int i=0; i< myArray.length; i++) {
@@ -23,6 +24,8 @@ public class exception101 {
             }
         }catch (IndexOutOfBoundsException e){
             System.out.println("Out of bounds in printing");
+        }finally {
+            System.out.println("finally po eto");
         }
     }
     public static void getQuotient(int num1, int num2) throws ArithmeticException{
